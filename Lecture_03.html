@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- Titles and author for Metadata -->
+	<title>Economic Growth and Development -  Lecture 3</title>
+	<meta name="description" content="GIS for Applied Economics">
+	<meta name="author" content="Juan Carlos Muñoz-Mora">
+
+	<!-- Options for screen -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<!-- Templates -->
+	<link rel="stylesheet" href="reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+	<link rel="stylesheet" href="reveal.js-own-style/print.css"  type="text/css" media="print">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+	<!--[if lt IE 9]>
+	<script src="reveal.js/lib/js/html5shiv.js"></script>
+	<![endif]-->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</head>
+
+	<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+	<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+	<!-- 				Content 					-->
+	<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+	<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			<!-- START SLIDES -->
+			<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+			<!-- 				Slide 1	 -- Title			-->
+			<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+
+<!-- Section 1: General Introduction  -->
+<section data-markdown  data-separator="^\n===\n" data-separator-vertical="^\n---\n" >
+<script type="text/template">
+
+# Slow-Swan Model (part I)
+<br>
+
+Juan Carlos Munoz-Mora
+
+<br>
+Universidad EAFIT
+<br>
+2019
+
+
+<!--  										-->
+<!-- Motivation and theory -->
+<!--  										-->
+
+===
+
+# Learning by context - Postwar Economy
+
+---
+<!-- .slide: data-background-color="#000000" data-background-video="inputs_growth_lecture03/post_war.webm" data-background-video-loop data-background-video-muted -->
+
+---
+
+- Productivity
+- Technology
+- Consumption
+- Labor!!
+
+===
+
+# What did we know about long term growth at that time?
+
+- The main model was the HD model?
+	- Fixed Output-Labor ratio
+	- No role of knowledge
+	- No productivity
+- Believe or not, Ramsey already had the model (no used).
+- It was not enough to explain what was happening
+
+---
+
+# Some unaswered questions using the HD
+
+- What was the role of technological change?
+- What is the role of productivity?
+- Where is the knowledge accomulation?
+- Population growth?
+
+---
+
+# The answer
+
+- A very simple model of long-term growth. Robert Solow and Trevor Swan in 1956
+- Fits pretty well the US data at that point
+
+===
+
+# The Basics
+
+---
+
+## Robison Crouse Economy
+
+![](inputs_growth_lecture03/naufrago.jpg)<!-- .element height="50%" width="60%" -->
+
+Film: cast away
+
+- Closed Economy
+- No government purchases of goods and services.
+- One sector economy (eat or produce)
+- Production = Income
+
+---
+
+## Production Function - Tree main ingredients:
+
+- Capital $K(t)$ <!-- .element: class="fragment" data-fragment-index="1" -->
+	- such as machines, buildings, pencils, and so on
+	- Rival good
+- Labor $L(t)$ <!-- .element: class="fragment" data-fragment-index="2" -->
+	- the number of workers and the amount of time they work, as well as their physical strength, skills, and health
+	- Rival good
+	- *Population* (growths) $\rightarrow$ $L(t)=e^{nt}$
+- knowledge or technology $T(t)$ <!-- .element: class="fragment" data-fragment-index="3" -->
+	- Workers and machines cannot produce anything without a formula or blueprint that shows them how to do it.
+	- Non rival good
+
+$Y(t)=F[K(t),L(t),T(t)]$<!-- .element: class="fragment" data-fragment-index="4" -->
+
+
+---
+
+## What does this economy produce for? $Y(t)$
+
+- Consumption $C(t)$<!-- .element: class="fragment" data-fragment-index="1" -->
+- Investment $I(t)$<!-- .element: class="fragment" data-fragment-index="2" -->
+	- Investment is used to create new units of pyshical capital $\uparrow K(t)$
+	- Replace old, depreciated capital (How does it happen? - next)
+
+$Y(t)=C(t)+I(t)$ <!-- .element: class="fragment" data-fragment-index="3" -->
+
+Moreover, we know that $S(t) \equiv Y(t)-C(t)$<!-- .element: class="fragment" data-fragment-index="4" -->
+- $S(t) \equiv Y(t)-C(t) = I(t)$ <!-- .element: class="fragment" data-fragment-index="4" -->
+
+---
+
+## Endogenous saving rate/investmet rate
+
+- $s(.)$ the fraction of production that is save $\rightarrow s(.)Y(t)=S(t)$ <!-- .element: class="fragment" data-fragment-index="1" -->
+- $\Rightarrow$ $(1-s(.))$ is the fraction of consumed <!-- .element: class="fragment" data-fragment-index="2" -->
+- $Y(t)=C(t)+I(t)= (1-s(.))Y(t)-s(.)I(t)=Y(t)$<!-- .element: class="fragment" data-fragment-index="3" -->
+
+---
+
+## How this saving rate is derived?
+
+ <blockquote cite="http://www.worldwildlife.org/who/index.html">
+Rational households choose the saving rate by  comparing the costs and benefits of consuming today rather than tomorrow; this comparison
+involves preference parameters and variables that describe the state of the economy, such  as the level of wealth and the interest rate.
+</blockquote>
+
+It is assumed exogenous.
+
+---
+
+## What about $K(t)$
+
+As all machines, buildings, pencils, and so on might get older we need to introduce depreciation.
+
+- it depreciates at the constant $\delta >0$<!-- .element: class="fragment" data-fragment-index="1" -->
+- $\rightarrow$ a constant fraction of the capital stock wears out and, hence, can no longer be used for production.<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+Then,<!-- .element: class="fragment" data-fragment-index="3" -->
+
+$\frac{\delta K}{\delta t}=\dot{K}(t)=I(t)-\delta K(t)= s F[K(t),L(t),T(t)] - \delta K(t) $ <!-- .element: class="fragment" data-fragment-index="3" -->
+
+---
+
+Let's make a diagram of the basic model!
+
+===
+
+Second RAP - Next Class
+
+** Reading Chapter 2 - 1.2.5
+
+
+</script>
+</section>
+
+
+<!-- END SLIDES -->
+		</div>
+	</div>
+
+<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+<!-- 				Scripts Options				-->
+<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+
+
+	<!-- Basic Scripts Set Up -->
+	<script src="reveal.js/lib/js/head.min.js"></script>
+	<script src="reveal.js/js/reveal.js"></script>
+
+	<!-- Basic Scripts Set Up -->
+	<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+				// Display a presentation progress bar
+				progress: true,
+				// Push each slide change to the browser history
+				history: true,
+				center: true,
+				mouseWheel: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // none/fade/slide/convex/concave/zoom
+			    //  Add annotation into the board
+			    chalkboard: { // font-awesome.min.css must be available
+					src: "chalkboard/chalkboard.json",
+					toggleChalkboardButton: { left: "80px" },
+					toggleNotesButton: { left: "130px" },
+    			},
+    			math: {
+					// mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+				menu: { // Menu works best with font-awesome installed: sudo apt-get install fonts-font-awesome
+					themes: false,
+					transitions: false,
+					markers: true,
+					hideMissingTitles: true,
+					custom: [
+				            { title: 'Plugins', icon: '<i class="fa fa-external-link"></i>', src: 'toc.html' },
+				            { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' }
+				        ]
+				},
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // none/fade/slide/convex/concave/zoom
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					// For Markdown Codes
+					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/math/math.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal.js-plugins/menu/menu.js' },
+					{ src: 'reveal.js-plugins/chalkboard/chalkboard.js' },
+				],
+				keyboard: {
+			        67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+			        66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+			        46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+			         8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+			        68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+
+    			},
+
+			});
+	</script>
+
+</body>
+</html>
