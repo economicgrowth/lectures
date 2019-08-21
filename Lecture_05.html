@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- Titles and author for Metadata -->
+	<title>Economic Growth and Development -  Lecture 5</title>
+	<meta name="description" content="GIS for Applied Economics">
+	<meta name="author" content="Juan Carlos Muñoz-Mora">
+
+	<!-- Options for screen -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<!-- Templates -->
+	<link rel="stylesheet" href="reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+	<link rel="stylesheet" href="reveal.js-own-style/print.css"  type="text/css" media="print">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+	<!--[if lt IE 9]>
+	<script src="reveal.js/lib/js/html5shiv.js"></script>
+	<![endif]-->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</head>
+
+	<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+	<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+	<!-- 				Content 					-->
+	<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+	<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			<!-- START SLIDES -->
+			<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+			<!-- 				Slide 1	 -- Title			-->
+			<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+
+<!-- Section 1: General Introduction  -->
+<section data-markdown  data-separator="^\n===\n" data-separator-vertical="^\n---\n" >
+<script type="text/template">
+
+# The Cass-Koopsman-Ramsey Model
+<br>
+
+Juan Carlos Munoz-Mora
+
+<br>
+Universidad EAFIT
+<br>
+2019
+
+
+<!--  										-->
+<!-- Motivation and theory -->
+<!--  										-->
+
+===
+
+# A MATHEMATICAL THEORY OF SAVING
+Frank Ramsey (1928)
+
+---
+
+![](inputs_growth_lecture05/ramsey.png)<!-- .element height="50%" width="60%" -->
+
+Frank Ramsey (22 February 1903 – 19 January 1930)
+
+---
+
+“one of the most remarkable contributions to mathematical economics
+ever made,” despite being “terribly diffi cult reading for an economist.”
+John Maynard Keynes (1933)
+
+---
+
+![](inputs_growth_lecture05/ramsey2.png)<!-- .element height="80%" width="60%" -->
+
+source: Garcia-Durante (2009)
+
+---
+
+## “rediscoveries” of Ramsey
+
+Only during the 1960s, when economists became more mathematically
+literate, was the “generalization of Ramsey’s study . . . made
+independently and more or less simultaneously” by David Cass (1965,
+1966) and Tjalling Koopmans (1965).
+
+===
+
+# Solow Model vs Cass-Koopman-Ramsey model
+
+---
+
+- There is evidence that the assumption of fixed saving rate
+- Permanent Income
+- Life-cycle -> Saving hypothesis
+- Preferences for cosumption
+
+===
+
+# Basic Set up
+
+Time discrete $t=0,1,...,T$
+
+---
+
+## A representative household
+
+- It derives utility from current consumption $c_t$
+- That is -> $u(c_t)$
+- We assume that the marginal utility is positive and decreasing $u'(c_t)>0 \text{ and } u''(c_t)<0 \forall c_t>0$
+- Moreover, we assume $\lim_{c \rightarrow 0} u'(c)=\infty$
+- "Farsighted" and "Impatient"
+
+---
+
+HH evaluate lifetime plan for $\lbrace c_t \rbrace^T_0$, in a weighted utility form:
+
+$W=\sum^T_{t=0}\beta^t u(c_t)$ where $0<\beta<1$
+
+$\beta$ is a discount factor (weight as expected utility as "t" grows.
+(!impatient)
+
+---
+
+## Firms/production function
+
+- Ee assume a constant labor force $L=1$.
+- We assume a neo-classical production function $F(K)$
+- A Robin Crouse Economy (no selling labor, nor capital). Households own production.
+- So, basic trade-off will be: consumption vs Production
+
+---
+
+So basic accumulation of capital:
+
+$K_{t+1}=K_t+F(K_t)-C_t-\delta K_t$
+
+So, each HH will choose sequences consumption and capital over lifecycle, that maximize its lifetime utility.
+
+---
+
+The main problem of this economy will be describe as follow:
+
+$max W$ s.a. $K_{t+1}=K_t+F(K_t)-C_t-\delta K_t$
+
+Additionally:
+- $K_{T+1}>0$
+- $K_{0}>0$
+
+
+</script>
+</section>
+            <section>
+                <section>
+						<h3>The main Problem</h3>
+
+                    \[L=\sum_{t=0}^T \beta^t u(c_t)+\sum \mu_{t+1} [K_t+F(K_t)-C_t-\delta K_t-K_{t+1}]   \]
+                    where, $\mu_{t+1}$ is the shadow value of capital
+                </section>
+
+                <section>
+						<h3>Therefore,</h3>
+
+                    <div class="fragment">
+							\[\begin{aligned}
+							\frac{\partial L}{\partial  C_t} &amp; = \beta^t u'(c_t)-\mu_{t+1} \\
+							\frac{\partial L}{\partial  K_t} &amp; = \mu_{t+1}[1+F'(K)-\delta]-\mu_t
+                            \end{aligned}\]
+                    $\forall t=0,1,...,T$
+
+                        We need to add a Kuhn-Tucker neccesary condition to guarentee no left-over
+                        $ \frac{\partial L}{\partial  K_{T+1}}=-\mu_{T+1}<=0$
+                    </div>
+
+                </section>
+
+                <section>
+						<h3>Solving the first order condition</h3>
+
+                    \[\begin{aligned}
+                        u(c_t)-\frac{}{\partial  C_t} &amp; = 0 \\
+                    \frac{\partial L}{\partial  K_t} &amp; = \mu_{t+1}[1+F'(K)-\delta]-\mu_t
+
+                    \end{aligned}\]
+
+                </section>
+
+
+
+
+
+
+            </section>
+
+
+<!-- END SLIDES -->
+		</div>
+	</div>
+
+<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+<!-- 				Scripts Options				-->
+<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+<!-- ...  ...  ...  ... ... ... ... ... .. .. ..-->
+
+
+	<!-- Basic Scripts Set Up -->
+	<script src="reveal.js/lib/js/head.min.js"></script>
+	<script src="reveal.js/js/reveal.js"></script>
+
+	<!-- Basic Scripts Set Up -->
+	<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+				// Display a presentation progress bar
+				progress: true,
+				// Push each slide change to the browser history
+				history: true,
+				center: true,
+				mouseWheel: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // none/fade/slide/convex/concave/zoom
+			    //  Add annotation into the board
+			    chalkboard: { // font-awesome.min.css must be available
+					src: "chalkboard/chalkboard.json",
+					toggleChalkboardButton: { left: "80px" },
+					toggleNotesButton: { left: "130px" },
+    			},
+    			// Latex
+                 math: {
+					 // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+                //math: {
+					// Elements to ignore for math rendering (defaults shown):
+					// ignoredElements: [ 'pre', 'code' ]
+					// Set `enableGlobally` to `false` to avoid excessive
+					// escaping. You will then need to activate `$…$`-style
+					// replacements per slide with a `data-math` attribute
+					// (formulas wrapped in elements are still activated
+					// everywhere).
+					//
+					//enableGlobally: false,
+					// Required for this example only, ignore --->
+					//katexScript:     'math-katex/lib/katex-0.7.1/katex.min.js',
+					//katexStylesheet: 'math-katex/lib/katex-0.7.1/katex.min.css'
+					// <---
+				//},
+				menu: { // Menu works best with font-awesome installed: sudo apt-get install fonts-font-awesome
+					themes: false,
+					transitions: false,
+					markers: true,
+					hideMissingTitles: true,
+					custom: [
+				            { title: 'Plugins', icon: '<i class="fa fa-external-link"></i>', src: 'toc.html' },
+				            { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' }
+				        ]
+				},
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // none/fade/slide/convex/concave/zoom
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					// For Markdown Codes
+					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// MAth - LAtex
+                    //{ src: 'reveal.js/plugin/math-katex/math-katex.js', async: true }
+                    { src: 'reveal.js/plugin/math/math.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal.js-plugins/menu/menu.js' },
+					{ src: 'reveal.js-plugins/chalkboard/chalkboard.js' },
+				],
+				keyboard: {
+			        67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+			        66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+			        46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+			         8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+			        68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+
+    			},
+
+			});
+	</script>
+
+</body>
+</html>
