@@ -6,7 +6,7 @@
 
 	<!-- Titles and author for Metadata -->
 	<title>Economic Growth and Development -  Lecture 5</title>
-	<meta name="description" content="GIS for Applied Economics">
+	<meta name="description" content="Growth&Development">
 	<meta name="author" content="Juan Carlos Muñoz-Mora">
 
 	<!-- Options for screen -->
@@ -45,7 +45,7 @@
 <section data-markdown  data-separator="^\n===\n" data-separator-vertical="^\n---\n" >
 <script type="text/template">
 
-# The Cass-Koopsman-Ramsey Model
+# ENDOGENOUS GROWTH
 <br>
 
 Juan Carlos Munoz-Mora
@@ -62,144 +62,156 @@ Universidad EAFIT
 
 ===
 
-# A MATHEMATICAL THEORY OF SAVING
-Frank Ramsey (1928)
+## Transitional Dynamics - Solow Model
+
+we know that
+$\dot k = sf(k) -(n+g)k$
 
 ---
 
-![](inputs_growth_lecture05/ramsey.png)<!-- .element height="50%" width="60%" -->
+Therefore,
 
-Frank Ramsey (22 February 1903 – 19 January 1930)
-
----
-
-“one of the most remarkable contributions to mathematical economics
-ever made,” despite being “terribly difficult reading for an economist.”
-John Maynard Keynes (1933)
+$\frac{\dot k}{k}=\frac{s f(k)}{k}-(n+\delta)$
 
 ---
 
-![](inputs_growth_lecture05/ramsey2.png)<!-- .element height="80%" width="60%" -->
-
-source: Garcia-Durante (2009)
-
----
-
-## “rediscoveries” of Ramsey
-
-Only during the 1960s, when economists became more mathematically
-literate, was the “generalization of Ramsey’s study . . . made
-independently and more or less simultaneously” by David Cass (1965,
-1966) and Tjalling Koopmans (1965).
+![](inputs_growth_lecture06/transition.png)<!-- .element height="50%" width="60%" -->
 
 ===
 
-# Solow Model vs Cass-Koopman-Ramsey model
+## Does it make sense that technological change as being determined exogenously, by noneconomic forces?
 
 ---
 
-- There is evidence that the assumption of fixed saving rate
-- Permanent Income
-- Life-cycle -> Saving hypothesis
-- Preferences for cosumption
+Technological change in reality
+- industrial innovation
+- funding of science
+- human capital
+
+---
+
+# Technology is an endogenous variable
+
+---
+
+## What does it imply?
+
+We know that $F(.)$ exhibits constant returns in $K$ and $L$ alone, which implies that their remuneration is their marginal productivity. After this, there is nothing else to pay improvement for technology.
+
+$F(K,L,T)=F_K K+F_L L$
+
+So there is not way to endogeneous technology growth!<!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
+However,
+- Research and Development.
+- technology could be a "rival good"
+
+---
+
+## So endogenous growth, may allow an escape from diminishing returns at the aggregate  level
 
 ===
 
-# Basic Set up
-
-Time discrete $t=0,1,...,T$
-
----
-
-## A representative household
-
-- It derives utility from current consumption $c_t$
-- That is -> $u(c_t)$
-- We assume that the marginal utility is positive and decreasing $u'(c_t)>0 \text{ and } u''(c_t)<0 \forall c_t>0$
-- Moreover, we assume $\lim_{c \rightarrow 0} u'(c)=\infty$
-- "Farsighted" and "Impatient"
+# The "AK" Model
+Learning by doing
 
 ---
 
-HH evaluate lifetime plan for $\lbrace c_t \rbrace^T_0$, in a weighted utility form:
-
-$W=\sum^T_{t=0}\beta^t u(c_t)$ where $0<\beta<1$
-
-$\beta$ is a discount factor (weight as expected utility as "t" grows.
-(!impatient)
+"progress is an unintended consequence of producing new capital goods, a phenomenon
+dubbed “learning by doing.” (Arrow’s, 1962)
 
 ---
 
-## Firms/production function
+$Y=AK$
 
-- Ee assume a constant labor force $L=1$.
-- We assume a neo-classical production function $F(K)$
-- A Robin Crouse Economy (no selling labor, nor capital). Households own production.
-- So, basic trade-off will be: consumption vs Production
+Is it a neoclassical production function?
 
 ---
 
-So basic accumulation of capital:
+As consequence,
 
-$K_{t+1}=K_t+F(K_t)-C_t-\delta K_t$
+$\dot K=sY-\delta K$
 
-So, each HH will choose sequences consumption and capital over lifecycle, that maximize its lifetime utility.
+SO the change of capital accumulation<!-- .element: class="fragment" data-fragment-index="1" -->
+
+\frac{\dot K}{K}=sA-\delta$<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
-The main problem of this economy will be describe as follow:
+Moreover, we can show that
+$\frac{\dot Y}{Y}=\frac{\dot K}{K}$
 
-$max W$ s.a. $K_{t+1}=K_t+F(K_t)-C_t-\delta K_t$
+---
 
-Additionally:
-- $K_{T+1}>0$
-- $K_{0}>0$
+the growth rate of the economy is an increasing function of the investment rate.
+
+Therefore, government policies that increase the investment rate of this economy permanently
+
+---
+
+##  The Solow Diagram for the AK Model
+
+![](inputs_growth_lecture06/AK_Solow.png)<!-- .element height="50%" width="60%" -->
+
+---
+
+What are the main implications of this model?
+
+- Is there convergence?
+---
+
+A generalization of this intuitions is assuming
+
+$Y=sAK\alpha$
+
+where $\alpha$ $\in [0,1]$
+
+
+---
+
+What happen with the dynamic of transition?
+
+===
+
+# Human Capital
+Lucas (1998)
+
+---
+
+$ Y=K^\alpha(hL)^{1-\alpha}$
+
+what Lucas calls the stock of
+‘human capital.’, or the "human Capital" per person
+
+---
+
+Lucas assume that
+    $\dot h=(1-u)h$
+
+where $1-u$, is the time accumulating skill.
+
+---
+
+    Therefore,
+
+    $\frac{\dot h}{h}=1-u$
+
+---
+
+So, in the Lucas model, a policy that leads to a permanent
+increase in the time individuals spend obtaining skills generates
+a permanent increase in the growth of output per worker.
+
+===
+
+NEXT LECTURE
+RAP
 
 
 </script>
 </section>
-            <section>
-                <section>
-						<h3>The main Problem</h3>
-
-                    \[L=\sum_{t=0}^T \beta^t u(c_t)+\sum \mu_{t+1} [K_t+F(K_t)-C_t-\delta K_t-K_{t+1}]   \]
-                    where, $\mu_{t+1}$ is the shadow value of capital
-                </section>
-
-                <section>
-						<h3>Therefore,</h3>
-
-                    <div class="fragment">
-							\[\begin{aligned}
-							\frac{\partial L}{\partial  C_t} &amp; = \beta^t u'(c_t)-\mu_{t+1} \\
-							\frac{\partial L}{\partial  K_t} &amp; = \mu_{t+1}[1+F'(K)-\delta]-\mu_t
-                            \end{aligned}\]
-                    $\forall t=0,1,...,T$
-
-                        We need to add a Kuhn-Tucker neccesary condition to guarentee no left-over
-                        $ \frac{\partial L}{\partial  K_{T+1}}=-\mu_{T+1}<=0$
-                    </div>
-
-                </section>
-
-                <section>
-						<h3>Solving the first order condition</h3>
-
-                    \[\begin{aligned}
-                        u(c_t)-\frac{}{\partial  C_t} &amp; = 0 \\
-                    \frac{\partial L}{\partial  K_t} &amp; = \mu_{t+1}[1+F'(K)-\delta]-\mu_t
-
-                    \end{aligned}\]
-
-                </section>
-
-
-
-
-
-
-            </section>
-
 
 <!-- END SLIDES -->
 		</div>
