@@ -6,7 +6,7 @@
 
 	<!-- Titles and author for Metadata -->
 	<title>Economic Growth and Development -  Lecture 5</title>
-	<meta name="description" content="Growth&Development">
+	<meta name="description" content="GIS for Applied Economics">
 	<meta name="author" content="Juan Carlos Muñoz-Mora">
 
 	<!-- Options for screen -->
@@ -45,7 +45,6 @@
 <section data-markdown  data-separator="^\n===\n" data-separator-vertical="^\n---\n" >
 <script type="text/template">
 
-
 # ENDOGENOUS GROWTH
 <br>
 
@@ -55,6 +54,11 @@ Juan Carlos Munoz-Mora
 Universidad EAFIT
 <br>
 2020
+
+
+<!--  										-->
+<!-- Motivation and theory -->
+<!--  										-->
 
 ===
 
@@ -72,6 +76,8 @@ $\frac{\dot k}{k}=\frac{s f(k)}{k}-(n+\delta)$
 ---
 
 ![](inputs_growth_lecture06/transition.png)<!-- .element height="50%" width="60%" -->
+
+
 
 ===
 
@@ -107,6 +113,7 @@ However,
 ---
 
 ## So endogenous growth, may allow an escape from diminishing returns at the aggregate  level
+
 
 ===
 
@@ -212,8 +219,19 @@ a permanent increase in the growth of output per worker.
 <!-- .slide: data-background-color="#000000" data-background-video="inputs_growth_lecture07/Ideas.webm" data-background-video-loop data-background-video-muted -->
 
 
+
+
 </script>
 </section>
+            <section>
+                <section>
+						<h3>The main Problem</h3>
+
+                    \[L=\sum_{t=0}^T \beta^t u(c_t)+\sum \mu_{t+1} [K_t+F(K_t)-C_t-\delta K_t-K_{t+1}]   \]
+                    where, $\mu_{t+1}$ is the shadow value of capital
+                </section>
+
+            </section>
 
 <!-- END SLIDES -->
 		</div>
@@ -235,14 +253,6 @@ a permanent increase in the growth of output per worker.
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				// ...
-				pubnubRemoteControl: {
-					subscribeKey: '
-sub-c-b86c91ae-6e8b-11ea-895f-e20534093ea4',	// PubNub subscribe key
-					publishKey: 'pub-c-ef4574e7-a152-4e2b-a9ab-491a543dc7c5',	// PubNub publish key
-					inputChannel: 'input',			// the channel used to receive remote commands
-					outputChannel: 'output',		// the channel used to update presentation status
-				},
 				// Display controls in the bottom right corner
 				controls: true,
 				// Display a presentation progress bar
@@ -310,9 +320,7 @@ sub-c-b86c91ae-6e8b-11ea-895f-e20534093ea4',	// PubNub subscribe key
 					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'reveal.js-plugins/menu/menu.js' },
-					{ src: 'https://cdn.pubnub.com/sdk/javascript/pubnub.4.4.0.min.js', async: true },
-					{ src: 'plugin/pubnub-remote-control/pubnub-remote-control.js', async: true },
-					{ src: 'reveal.js-plugins/chalkboard/chalkboard.js' }
+					{ src: 'reveal.js-plugins/chalkboard/chalkboard.js' },
 				],
 				keyboard: {
 			        67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
